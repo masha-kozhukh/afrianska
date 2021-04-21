@@ -19,9 +19,9 @@
     font-family:'Roboto-Thin' ;
     src:url(../fonts/Roboto/Roboto-Thin.ttf);
 }
-/* .wrapper{
+.wrapper{
     overflow-x: hidden;
-} */
+}
 body{
     overflow-x: hidden;
 }
@@ -52,11 +52,12 @@ a{
  
 }
 .header__nav{
-    position: absolute;
+    position: fixed;
     right: 0;
     height: 92vh;
     top: 8vh;
     background: #356EAD;
+    border-radius: 50px 0px 0px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -80,11 +81,17 @@ a{
 .nav__list{
     opacity: 0;
 }
-.header__nav a{
-    color:#1F3F68;
+.header__nav a {
+    color: #ffff;
     font-weight: 500;
-    
+    font-size: 30px;
+    transition: 0.2s all ease;
+    cursor: pointer;
 }
+.header__nav a:hover{
+    opacity: 0.9;
+}
+
 .burger__menu{
     cursor: pointer;
 }
@@ -698,6 +705,9 @@ a{
 
 }
 @media screen and (max-width:524px){
+    header{
+        padding: 0px 15px!important;
+    }
     .brang__item:nth-child(n+1){
         border-right:none;
     }
@@ -709,6 +719,9 @@ a{
     }
 }
 @media screen and (max-width:429px){
+    .header__nav {
+        width: 60%;
+    }
     .inner__title {
         font-size: 32px;
     }
