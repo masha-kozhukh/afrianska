@@ -591,7 +591,8 @@ a{
 .blog__item{
     width: 50%;
 }
-.blog__item-title{
+.blog__item-title a{
+    cursor: pointer;
     font-size: 48px;
     line-height: 121%;
     letter-spacing: 0.04em;
@@ -610,10 +611,11 @@ a{
     display: flex;
     align-items: center;
     position: absolute;
-    bottom: 0;
+    /* bottom: 0; */
     width: 50%;
+    margin: 50px 0px;
 }
-.blog__footer-title{
+.blog__footer-title a{
     font-size: 14px;
     /* line-height: 171%; */
     letter-spacing: 0.04em;
@@ -651,7 +653,7 @@ a{
     width: 100%;
     justify-content: space-between;
 }
-.blog__card-title{
+.blog__card-title a{
     font-size: 22px;
     line-height: 136% ;
     letter-spacing: 0.04em;
@@ -664,7 +666,7 @@ a{
 .article__content .blog__items{
     justify-content: inherit;
 }
-.article__content .blog__item-title{
+.article__content .blog__item-title a{
     font-size: 25px;
 }
 .blog__item-article{
@@ -993,13 +995,14 @@ a{
         width: 100%;
     }
     .blog-footer {
-        bottom: inherit;
+        /* bottom: inherit; */
         width: 100%;
+        margin: 30px 0px;
     }
     .blog__img{
         margin-bottom: 40px;
     }
-    .blog__item-title{
+    .blog__item-title a{
         font-size: 40px;
     }
     .contacts__items{
@@ -1178,9 +1181,10 @@ a{
         font-size: 16px;
         margin-bottom: 25px;
     }
-    .blog__item-title {
+    .blog__item-title a {
         font-size: 22px;
         margin-bottom: 25px;
+        cursor: pointer;
     }
     .blog__item-subtitle {
         font-size: 14px;
@@ -1188,8 +1192,9 @@ a{
     .blog__cards {
         margin-bottom: 5px;
     }
-    .article__content .blog__item-title {
+    .article__content .blog__item-title a {
         font-size: 22px;
+        cursor: pointer;
     }
     .blog__footer-item {
         margin-right: 35%;
