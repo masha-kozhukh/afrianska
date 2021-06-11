@@ -19,6 +19,7 @@ const navSider = ()=>{
     });
     
 }
+navSider();
 //search blog
 const clearIcon = document.querySelector(".clear-icon");
 const searchBar = document.querySelector(".search");
@@ -38,20 +39,19 @@ clearIcon.addEventListener("click", () => {
 
 
 //animation
-navSider();
-const logo = document.querySelector('.logo__link');
-const burger = document.querySelector('.burger__menu');
-const inner = document.querySelector('.inner');
-const innerText = document.querySelector('.inner__text');
-const innerImg = document.querySelector('.inner__img');
-const project = document.querySelector('.project__bunner');
+// navSider();
+// const logo = document.querySelector('.logo__link');
+// const burger = document.querySelector('.burger__menu');
+// const inner = document.querySelector('.inner');
+// const innerText = document.querySelector('.inner__text');
+// const innerImg = document.querySelector('.inner__img');
+// const project = document.querySelector('.project__bunner');
 
 
-const tl = new TimelineMax();
+// const tl = new TimelineMax();
 
-tl.fromTo(inner, 0.5, {opacity:0} , {opacity:1 , ease: Power2.easeInOut})
-tl.fromTo(logo, 0.3, {opacity:0, x: 30 } , {opacity:1 , x: 0 }, '-=0.5')
-tl.fromTo(burger, 0.5, {opacity:0, x: 30 } , {opacity:1 , x: 0 }, '-=0.5')
-tl.fromTo(innerText, 1, {y: '-80%'} , {y: '0%', ease: Power2.easeInOut}, '-=0.5')
-tl.fromTo(innerImg, 1, {opacity:0 } , {opacity:1 , ease: Power2.easeInOut }, '-=0.5')
-// tl.fromTo(project, 1.2, {opacity:0 } , {opacity:1 , ease: Power2.easeInOut })
+// tl.fromTo(inner, 0.5, {opacity:0} , {opacity:1 , ease: Power2.easeInOut})
+// tl.fromTo(logo, 0.3, {opacity:0, x: 30 } , {opacity:1 , x: 0 }, '-=0.5')
+// tl.fromTo(burger, 0.5, {opacity:0, x: 30 } , {opacity:1 , x: 0 }, '-=0.5')
+// tl.fromTo(innerText, 1, {y: '-80%'} , {y: '0%', ease: Power2.easeInOut}, '-=0.5')
+// tl.fromTo(innerImg, 1, {opacity:0 } , {opacity:1 , ease: Power2.easeInOut }, '-=0.5')
